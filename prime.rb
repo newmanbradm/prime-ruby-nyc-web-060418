@@ -3,6 +3,6 @@ def prime?(number)
     return false
   else
     (2..number-1).to_a.all? do |i|
-      number % i 
+      number % i != 0
 end
 end
